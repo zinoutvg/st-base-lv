@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/cursos', function () {
-  return "Bienvenido a la página cursos";
-});
+Route::get('/home', HomeController::class);
 
 Route::get('/cursos/{id}', function ($id) {
   return "Bienvenido al curso: $id";
