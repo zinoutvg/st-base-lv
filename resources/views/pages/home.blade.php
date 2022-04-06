@@ -1,9 +1,11 @@
-@extends('layouts/template')
+@extends('layouts.template')
 
 @section('title', 'Home')
 
 @section('content')
 
-  <h1>Bienvenido a la homeerere page</h1>
+  <h2>Bienvenido a Conoce - Software de Prevención de Riesgos</h2>
+
+  <?php echo $courses[0]; ?>
 
 @endsection
