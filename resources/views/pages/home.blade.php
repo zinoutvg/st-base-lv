@@ -7,7 +7,7 @@
   <h2>Bienvenido a Conoce - Software de Prevención de Riesgos</h2>
 
   <div class="card">
-    <div class="card-body d-flex justify-content-between flex-wrap">
+    <div class="card-body d-flex justify-content-around flex-wrap">
 
       @foreach ($courses as $course)
       <div class="text-center p-4" style="width: fit-content; width: 300px;">
