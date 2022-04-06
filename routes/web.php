@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,8 @@ Route::get('/', function () {
 });
 
 Route::get('/home', HomeController::class);
+
+Route::get('/login', [LoginController::class, 'index']);
 
 Route::get('/cursos/{id}', function ($id) {
   return "Bienvenido al curso: $id";
