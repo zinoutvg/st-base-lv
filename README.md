@@ -85,3 +85,32 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ```
 >> npm run dev
 ```
+
+## Improvements
+[x] Adding custom domain in hosts system operative:
+```
+Edit C:\Windows\System32\drivers\hosts
+
+# Localhost
+192.168.1.3 hp.com
+```
+[x] Adding custom domain in apache config:
+```
+Edit C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+NameVirtualHost *
+<VirtualHost *>
+  DocumentRoot "C:\xampp\htdocs"
+  ServerName localhost
+</VirtualHost>
+
+<VirtualHost *>
+  DocumentRoot "C:\xampp\htdocs\laravel-base\public"
+  ServerName hp.com
+  <Directory "C:\xampp\htdocs\laravel-base\public">
+    Options All
+    AllowOverride All
+    Require all granted
+  </Directory>
+</VirtualHost>
+```
