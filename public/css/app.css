@@ -18046,7 +18046,7 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 576px) {
   .navbar-logo {
     width: auto;
     height: auto;
