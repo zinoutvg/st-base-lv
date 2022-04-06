@@ -8,6 +8,20 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons';
 
-body {
-  background-color: red;
+// First Mobile
+.navbar-logo {
+  width: 180px;
+}
+
+.nav-link:hover {
+  color: $primary !important;
+  font-weight: bold;
+}
+
+// Desktop
+@media (min-width: 600px) {
+  .navbar-logo {
+    width: auto;
+    height: auto;
+  }
 }

@@ -19,6 +19,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
+              class="navbar-logo"
               src="https://soft.conoce.com.pe/wp-content/uploads/2020/09/logo_titulo_prevencion_riesgos_03.png"
               alt=""
               width="auto"
