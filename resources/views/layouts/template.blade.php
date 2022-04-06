@@ -13,7 +13,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
   </head>
 
-  <body>
+  <body class="d-flex flex-column">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded">
         <div class="container-fluid">
@@ -54,9 +54,15 @@
       </nav>
     </header>
 
-    @yield('content')
+    <div id="page-content">
+      @yield('content')
+    </div>
 
-    <footer>
+    <footer class="bg-dark d-flex justify-content-center align-items-center" style="height: 100px">
+      <div class="container p-4 text-white text-center">
+        <span>© 2022 – <a class="text-white" href="#">Software - Prevencion de Riesgos</a> I D: Calle Las Orquídeas 585 – Piso 12, San Isidro I T: (01) 711-3927</span>
+      </div>
+
       <!-- Bootstrap -->
       <script src="{{ asset('js/app.js') }}" defer></script>
     </footer>
