@@ -15,7 +15,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
