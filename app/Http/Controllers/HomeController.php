@@ -8,12 +8,11 @@ class HomeController extends Controller {
 
   public function __invoke() {
     $items = [
-      'Matriz de Riesgo',
-      'Scoring de Riesgo',
-      'Reporte de Operaciones',
-      'Consulta de listas',
-      'Canal de Denuncia',
-      'Mis Cursos'
+      array(
+        'title' => 'Matriz de Riesgo',
+        'description' => 'Scoring de Riesgo',
+        'imgUrl' => 'https://soft.conoce.com.pe/wp-content/uploads/2020/11/Matriz-de-riesgo.jpg'
+      )
     ];
     return view(
       'pages.home',
