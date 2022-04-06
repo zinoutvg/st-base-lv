@@ -77,3 +77,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 >> npm run dev
 >> npm run dev <--- (twice)
 ```
+[x] If change sass/_variables.scss, type following command after save changes:
+```
+>> npm run dev
+```
+[x] After install Bootstrap, custom styles should to be inserted into resources/sass/app.scss and type following command after save changes:
+```
+>> npm run dev
+```
