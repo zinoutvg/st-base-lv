@@ -10,8 +10,8 @@
     <div class="card-body d-flex justify-content-around flex-wrap">
 
       @foreach ($courses as $course)
-      <div class="text-center p-4" style="width: fit-content; width: 300px;">
-        <img src="{{ $course['imgUrl'] }}" style="width: -webkit-fill-available; height: 170px;" /> 
+      <div class="text-center p-4 home--card">
+        <img src="{{ $course['imgUrl'] }}" />
         <h5>{{ $course['title'] }}</h5>
         <label>{{ $course['description'] }}</label>
       </div>

@@ -18055,9 +18055,25 @@ body {
   font-weight: bold;
 }
 
+.home--card {
+  width: 300px;
+}
+.home--card img {
+  width: -webkit-fill-available;
+  height: 170px;
+}
+
 @media (min-width: 576px) {
   .navbar-logo {
     width: auto;
     height: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .home--card {
+    width: 400px;
+  }
+  .home--card img {
+    width: auto;
   }
 }
