@@ -19,7 +19,7 @@
 }
 
 // Desktop
-@media (min-width: 600px) {
+@media (min-width: $sm) {
   .navbar-logo {
     width: auto;
     height: auto;
